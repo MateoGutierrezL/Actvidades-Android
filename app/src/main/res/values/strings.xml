@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Clase Actividad</string>
+    <string name="descripcion_imagen_1">Ciudad moderna en un amanecer</string>
+    <string name="descripcion_imagen_2">Rascacielos y un paisaje de fondo</string>
+    <string name="descripcion_imagen_3">Naturaleza en otoño y un pueblo en medio de las montañas</string>
+    <string name="descripcion_imagen_4">Naturaleza de otoño y un amanecer de fondo</string>
+    <string name="descripcion_imagen_5">Vecindario tranquilo</string>
+    <string name="descripcion_imagen_6">Cielo de noche con remolinos grandes</string>
+    <string name="descripcion_imagen_7">Hermosa playa con buenos detalles</string>
+    <string name="carrusel_imagenes">Carrusel imagenes</string>
+    <string name="imagen">Imagen</string>
+
+
+
+</resources>
