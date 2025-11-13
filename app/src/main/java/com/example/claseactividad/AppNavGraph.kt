@@ -41,7 +41,10 @@ fun AppNavGraph(navController: NavHostController){
             val descriptionId = backStackEntry.arguments?.getInt("descriptionId") ?: -1
 
             // Llama al Composable de destino con los datos extraídos
-            ImageDescription(imageSourceId = imageId, descriptionId = descriptionId)
+            ImageDescription(imageSourceId = imageId, descriptionId = descriptionId,
+                onBack = {
+                navController.popBackStack()
+            })
         }
     }
 }

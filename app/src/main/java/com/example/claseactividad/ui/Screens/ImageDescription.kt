@@ -9,6 +9,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -33,7 +35,8 @@ import com.example.claseactividad.ui.theme.ClaseActividadTheme
 @Composable
 fun ImageDescription(
     @DrawableRes imageSourceId: Int,
-    @StringRes descriptionId: Int
+    @StringRes descriptionId: Int,
+    onBack: () -> Unit
 ) {
 
     //Variable para manejar la nullabilidad de la descripcion
@@ -76,7 +79,7 @@ fun ImageDescription(
                             .height(300.dp)
                     )
                 } else {
-                    Text(text = "Error: Imagen no válida")
+                    Text(text = "Error:     Imagen no válida")
                 }
 
                 Spacer(modifier = Modifier.height(32.dp))
@@ -86,6 +89,18 @@ fun ImageDescription(
                     style = MaterialTheme.typography.headlineMedium,
                     color = MaterialTheme.colorScheme.onBackground
                 )
+
+                Button(onClick = {
+                    onBack()
+                }, colors = ButtonDefaults.buttonColors(
+
+                    containerColor = MaterialTheme.colorScheme.tertiary,
+                    contentColor = MaterialTheme.colorScheme.onTertiary,
+
+                ) ,
+                    modifier = Modifier.padding(top = 10.dp)) {
+                    Text(text = stringResource(R.string.volver))
+                }
             }
         }
     }
