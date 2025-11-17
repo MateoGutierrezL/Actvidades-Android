@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Shop App</string>
+    <string name="descripcion_imagen_1">Cotton Shirt</string>
+    <string name="descripcion_imagen_2">Slim Fit shirt</string>
+    <string name="descripcion_imagen_3">Red Dress</string>
+    <string name="descripcion_imagen_4">Polo Shirt</string>
+    <string name="descripcion_imagen_5">Black Dress</string>
+    <string name="descripcion_imagen_6">White dress</string>
+
+</resources>
