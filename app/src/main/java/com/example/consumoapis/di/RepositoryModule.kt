@@ -18,7 +18,9 @@ object RepositoryModule {
         @Singleton
         fun provideUserRepository(
             pokemonRepositoryimpl: PokemonRepositoryImpl
-        ){
+        ): PokemonRepository {
+
+            return pokemonRepositoryimpl
 
         }
     }
